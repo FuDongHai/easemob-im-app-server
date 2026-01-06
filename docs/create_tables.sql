@@ -2,10 +2,10 @@ create database app_server character set utf8mb4;
 
 create table app_user_info (
     id bigint(20) AUTO_INCREMENT primary key,
-	user_account varchar(32) not null commit '用户的账号',
-	user_password varchar(32) commit '用户的密码',
-    chat_user_name varchar(32) not null commit '环信用户名',
-    agora_uid varchar(20) not null commit '声网用户id'
+	user_account varchar(32) not null comment '用户的账号',
+	user_password varchar(32) comment '用户的密码',
+    chat_user_name varchar(32) not null comment '环信用户名',
+    agora_uid varchar(20) not null comment '声网用户id'
 );
 
 create table live_room_details (
